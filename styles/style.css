@@ -1,0 +1,119 @@
+@import "reset.css";
+@import "fonts.css";
+
+* {
+  box-sizing: border-box;
+
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+header,
+.panel,
+.timestamp {
+  font-family: Arial, sans-serif;
+}
+
+h3 {
+  font-family: Georgia, serif;
+}
+
+body > header {
+  display: flex;
+
+  height: 45px;
+
+  letter-spacing: 1px;
+  text-transform: uppercase;
+
+  color: #f2f2f2;
+  background-color: rgb(38, 38, 38);
+
+  font-size: 13px;
+
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  height: 21px;
+  margin-top: -6px;
+  margin-left: 15px;
+}
+
+body > header ul {
+  display: inline-flex;
+
+  justify-content: center;
+  align-items: center;
+}
+
+body > header li {
+  padding-right: 15px;
+}
+
+.panel {
+  position: relative;
+
+  height: 45px;
+  padding: 15px;
+
+  border-bottom: 1px solid #ccc;
+  background-color: #fff;
+
+  font-weight: bold;
+}
+
+.panel button {
+  position: absolute;
+  right: 0;
+}
+
+main {
+  height: 100vh;
+  padding-top: 15px;
+
+  background-color: rgb(242, 242, 242);
+}
+
+section {
+  width: 90vw;
+  margin: 0 auto;
+
+  border: 1px solid #ccc;
+  border-top: 4px solid #b88b58;
+  background-color: #fff;
+}
+
+.top-stories {
+  height: 350px;
+}
+
+.container {
+  display: flex;
+}
+
+.is-important {
+  width: 50%;
+}
+
+.container-right {
+  display: flex;
+
+  width: 50%;
+
+  flex-flow: row wrap;
+}
+
+.container-right .card {
+  display: flex;
+
+  width: 50%;
+  height: 100%;
+
+  flex-flow: column nowrap;
+}
+
+.container-right .card h3 {
+  flex: 1;
+}
